@@ -1,9 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
+import createProduct from '../views/CreateProduct.vue'
+
 Vue.use(VueRouter);
 
-const routes = [];
+const routes = [
+  { path: '/createProduct', component: createProduct }
+];
 
 const router = new VueRouter({
   mode: "history",
