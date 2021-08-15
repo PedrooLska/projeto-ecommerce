@@ -7,5 +7,5 @@ export default {
       to: "/createProduct",
     },
   ],
-  mini: true,
+  userName: "Pedro Lucas",
 };

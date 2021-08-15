@@ -6,7 +6,7 @@
           <v-img src="https://randomuser.me/api/portraits/men/85.jpg"></v-img>
         </v-list-item-avatar>
 
-        <v-list-item-title>Pedro Lucas</v-list-item-title>
+        <v-list-item-title> {{ userName }} </v-list-item-title>
 
         <v-btn icon @click.stop="hiddenOrShowMenu">
           <v-icon>mdi-chevron-left</v-icon>
@@ -47,6 +47,7 @@ export default {
   computed: {
     ...mapState({
       listMenus: (state) => state.menus.listMenus,
+      userName: (state) => state.menus.userName,
     }),
   },
   methods: {
